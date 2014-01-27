@@ -27,7 +27,10 @@ cd emacs4newcomer
 [ ! -h $DEST/.emacs.d ] && ln -s $DEST/.repos/emacs4newcomer $DEST/.emacs.d
 cd ..
 
-echo "installation finished."
+echo "🌟 Installation finished. Close this window or tab."
 for l in $notices; do
   echo $l
 done
+
+sleep 12345
+
