@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -e
 DEST=$HOME
-REPOS=(vimrc emacs4newcomer)
+REPOS=(vimrc emacs)
 notices=()
 
 cd $DEST
@@ -22,9 +22,9 @@ cd vimrc
 [ ! -h $DEST/.vimrc ] && ln -s $DEST/.repos/vimrc/vimrc $DEST/.vimrc
 cd ..
 
-# emacs4newcomer
-cd emacs4newcomer
-[ ! -h $DEST/.emacs.d ] && ln -s $DEST/.repos/emacs4newcomer $DEST/.emacs.d
+# emacs
+cd emacs
+[ ! -h $DEST/.emacs.d ] && ln -s $DEST/.repos/emacs $DEST/.emacs.d
 cd ..
 
 echo "🌟 Installation finished. Close this window or tab."
