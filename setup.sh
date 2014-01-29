@@ -15,7 +15,7 @@ done
 # NeoBundle
 [ ! -d ~/.vim/bundle/neobundle.vim ] && \
     git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-notices+="* do 'vim -c NeoBundleInstall' before using vim"
+notices+="do 'vim -c NeoBundleInstall' before using vim"
 
 # vimrc
 cd vimrc
@@ -27,10 +27,12 @@ cd emacs
 [ ! -h $DEST/.emacs.d ] && ln -s $DEST/.repos/emacs $DEST/.emacs.d
 cd ..
 
-echo "🌟 Installation finished. Close this window or tab."
+echo
+echo "Notices: "
 for l in $notices; do
-  echo $l
+  echo "* $l"
 done
+echo "🌟 Installation finished. Close this window or tab."
 
 sleep 12345
 
